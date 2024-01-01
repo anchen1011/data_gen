@@ -14,7 +14,7 @@ with jsonlines.open(fname) as reader:
 print(len(samples))
 
 from agents.memory_tree import MemoryTree
-from utils.agent_utils import split_text_into_paragraphs
+from utils.lang_utils import split_text_into_paragraphs
 from utils.file_utils import jsonl_filename_suffix
 with jsonlines.open(jsonl_filename_suffix(fname, 'pro'), mode='a') as writer:
 
